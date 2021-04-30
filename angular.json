@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "mini-projects"
+  "defaultProject": "mini-projects",
+  "cli": {
+    "analytics": "6020fd73-8403-4a69-9100-de4a8d6141b2"
+  }
 }
