@@ -13,7 +13,7 @@ export class DynamicContentComponent implements  AfterViewInit {
     container: ViewContainerRef;
 
     @Input()
-    type: string;
+    type: string;  // "sample1"
 
     @Input()
     context: any;
@@ -23,8 +23,10 @@ export class DynamicContentComponent implements  AfterViewInit {
         'sample2': DynamicSample2Component
     };
 
+    // Represents a component created by a ComponentFactory. Provides access to the component instance and related objects, and provides the means of destroying the instance.
     private componentRef: ComponentRef<{}>;
 
+    //ComponentFactoryResolver  maps Components to generated ComponentFactory classes that can be used to create instances of components.  (dynamic comp.)
     constructor(
         private componentFactoryResolver: ComponentFactoryResolver, private cdr: ChangeDetectorRef) {
     }
