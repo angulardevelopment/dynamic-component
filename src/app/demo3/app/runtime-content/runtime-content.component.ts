@@ -20,7 +20,6 @@ export class RuntimeContentComponent {
     private componentRef: ComponentRef<{}>;
 
     constructor(
-        private componentFactoryResolver: ComponentFactoryResolver,
         private compiler: Compiler) {
     }
 
@@ -31,7 +30,7 @@ export class RuntimeContentComponent {
             template: this.template
         };
 
-        let factory = this.createComponentFactorySync(this.compiler, metadata, null);
+        let factory = this.createComponentFactorySync(metadata, null);
 
         if (this.componentRef) {
             this.componentRef.destroy();
@@ -40,14 +39,17 @@ export class RuntimeContentComponent {
         this.componentRef = this.container.createComponent(factory);
     }
 
-    private createComponentFactorySync(compiler: Compiler, metadata: Component, componentClass: any): ComponentFactory<any> {
+    private createComponentFactorySync(metadata: Component, componentClass: any): ComponentFactory<any> {
+      // decorated Component
         const cmpClass = componentClass || class RuntimeComponent { name: string = 'Denys' };
         const decoratedCmp = Component(metadata)(cmpClass);
 
+        // decorated module update
         @NgModule({ imports: [CommonModule], declarations: [decoratedCmp] })
         class RuntimeComponentModule { }
 
-        let module: ModuleWithComponentFactories<any> = compiler.compileModuleAndAllComponentsSync(RuntimeComponentModule);
+        let module: ModuleWithComponentFactories<any> = this.compiler.compileModuleAndAllComponentsSync(RuntimeComponentModule);
+
         return module.componentFactories.find(f => f.componentType === decoratedCmp);
     }
 

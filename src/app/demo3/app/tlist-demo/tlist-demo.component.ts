@@ -3,17 +3,15 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-tlist-demo',
   templateUrl: './tlist-demo.component.html',
-  styleUrls: ['./tlist-demo.component.css']
+  styleUrls: ['./tlist-demo.component.css'],
 })
 export class TlistDemoComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-items: any[] = [
-        { title: 'Item 1' },
-        { title: 'Item 2' },
-        { title: 'Item 3' }
-    ];
+  ngOnInit() {}
+  items = [
+    { title: 'Item 1' },
+    { title: 'Item 2' },
+    { title: 'Item 3' },
+  ];
 }

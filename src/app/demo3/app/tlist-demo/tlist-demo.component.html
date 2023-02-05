@@ -1,8 +1,8 @@
-  <div>
-            <h2>Templated list</h2>
-            <app-tlist [items]="items">
-                <ng-template let-item="$implicit" let-i="index">
-                    <li>[{{i}}] Hello: {{item.title}}</li>
-                </ng-template>
-            </app-tlist>
-        </div>
+<div>
+  <h2>Templated list</h2>
+  <app-tlist [items]="items">
+    <ng-template let-item="$implicit" let-i="index">
+      <li>[{{ i }}] Hello: {{ item.title }}</li>
+    </ng-template>
+  </app-tlist>
+</div>

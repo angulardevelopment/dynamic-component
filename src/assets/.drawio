@@ -1,0 +1,30 @@
+<mxfile host="65bd71144e">
+    <diagram id="mj-2WJMM6RLskx7p42qm" name="Page-1">
+        <mxGraphModel dx="706" dy="195" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="54dyAagoeW23H6z90rpz-10" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;app-tlist (child component)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54dyAagoeW23H6z90rpz-11" value="&lt;span style=&quot;color: rgb(255, 121, 198); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(40, 42, 54);&quot;&gt;app-tlist demo (parent&lt;br&gt;&amp;nbsp;comp)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54dyAagoeW23H6z90rpz-12" value="import child comp&lt;br&gt;&lt;br&gt;&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #50fa7b;font-style: italic;&quot;&gt;let-*&lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;=&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54dyAagoeW23H6z90rpz-13" value="reference of elements&lt;br&gt;&lt;br&gt;&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #50fa7b;font-style: italic;&quot;&gt;ngFor&lt;/span&gt; &lt;span style=&quot;color: #50fa7b;font-style: italic;&quot;&gt;[ngForOf]&lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #50fa7b;font-style: italic;&quot;&gt;[ngForTemplate]&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="110" width="160" height="160" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="6cyl-hqbs5tjHh-yR0cR" name="Page-2">
+        <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
