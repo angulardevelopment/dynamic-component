@@ -30,28 +30,28 @@ export class RuntimeContentComponent {
             template: this.template
         };
 
-        let factory = this.createComponentFactorySync(metadata, null);
+        // let factory = this.createComponentFactorySync(metadata, null);
 
         if (this.componentRef) {
             this.componentRef.destroy();
             this.componentRef = null;
         }
-        this.componentRef = this.container.createComponent(factory);
+        // this.componentRef = this.container.createComponent(factory);
     }
 
-    private createComponentFactorySync(metadata: Component, componentClass: any): ComponentFactory<any> {
-      // decorated Component
-        const cmpClass = componentClass || class RuntimeComponent { name: string = 'Denys' };
-        const decoratedCmp = Component(metadata)(cmpClass);
+    // private createComponentFactorySync(metadata: Component, componentClass: any): ComponentFactory<any> {
+    //   // decorated Component
+    //     const cmpClass = componentClass || class RuntimeComponent { name: string = 'Denys' };
+    //     const decoratedCmp = Component(metadata)(cmpClass);
 
-        // decorated module update
-        @NgModule({ imports: [CommonModule], declarations: [decoratedCmp] })
-        class RuntimeComponentModule { }
+    //     // decorated module update
+    //     @NgModule({ imports: [CommonModule], declarations: [decoratedCmp] })
+    //     class RuntimeComponentModule { }
 
-        let module: ModuleWithComponentFactories<any> = this.compiler.compileModuleAndAllComponentsSync(RuntimeComponentModule);
+    //     let module: ModuleWithComponentFactories<any> = this.compiler.compileModuleAndAllComponentsSync(RuntimeComponentModule);
 
-        return module.componentFactories.find(f => f.componentType === decoratedCmp);
-    }
+    //     return module.componentFactories.find(f => f.componentType === decoratedCmp);
+    // }
 
 
 
