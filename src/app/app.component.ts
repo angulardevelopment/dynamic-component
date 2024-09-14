@@ -15,7 +15,7 @@ import { TestDirective } from './demo3/app/test.directive';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'mini-projects';
+
   @ViewChild(TestDirective) dir: TestDirective;
   changeCol() {
     this.dir.changeColor('blue');
