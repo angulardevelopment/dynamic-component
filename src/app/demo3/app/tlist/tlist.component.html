@@ -2,3 +2,10 @@
   <ng-template ngFor [ngForOf]="items" [ngForTemplate]="template">
   </ng-template>
 </ul>
+
+
+<ul>
+  <ng-template ngFor let-hero let-i="index" [ngForOf]="heroes">
+    <li>Hero number {{i}}: {{hero.name}}
+  </ng-template>
+</ul>
